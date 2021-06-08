@@ -1,0 +1,36 @@
+/* You need to create the rest of styles for the layout shown */
+
+.options {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin: 0 2rem;
+  border: 1px dashed dodgerblue;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
+}
+
+.choices {
+  display: flex;
+}
+
+li {
+  display: flex;
+}
+/* 
+input[type="radio"] {
+  display: flex;
+  justify-content: right;
+} */
+/* .choices__metals {
+  flex-direction: column;
+}
+
+.choices__sizes {
+  flex-direction: column;
+}
+
+.choices__styles {
+  flex-direction: column;
+} */
