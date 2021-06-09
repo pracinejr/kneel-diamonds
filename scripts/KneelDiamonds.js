@@ -2,8 +2,14 @@ import { DiamondSizes } from "./DiamondSizes.js";
 import { JewelryStyles } from "./JewelryStyles.js";
 import { Orders } from "./Orders.js";
 import { Metals } from "./Metals.js";
+import { addCustomOrder } from "./database.js";
 
-document.addEventListener("click", (event) => {});
+document.addEventListener("click", (event) => {
+  const clickedItem = event.target;
+  if (clickedItem.id === "orderButton") {
+    addCustomOrder();
+  }
+});
 
 export const KneelDiamonds = () => {
   return `
@@ -26,6 +32,7 @@ export const KneelDiamonds = () => {
 
         <article>
             <button id="orderButton">Create Custom Order</button>
+            ${addCustomOrder()}
         </article>
 
         <article class="customOrders">
