@@ -32,7 +32,6 @@ export const KneelDiamonds = () => {
 
         <article>
             <button id="orderButton">Create Custom Order</button>
-            ${addCustomOrder()}
         </article>
 
         <article class="customOrders">
