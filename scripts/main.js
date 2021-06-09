@@ -1,10 +1,14 @@
-import { KneelDiamonds } from "./KneelDiamonds.js"
+import { KneelDiamonds } from "./KneelDiamonds.js";
 
-const mainContainer = document.querySelector("#container")
+const mainContainer = document.querySelector("#container");
 
 const renderAllHTML = () => {
-    mainContainer.innerHTML = KneelDiamonds()
-}
+  mainContainer.innerHTML = KneelDiamonds();
+};
 
-renderAllHTML()
+renderAllHTML();
 
+document.addEventListener("stateChanged", (event) => {
+  console.log("State of data has changed. Regenerating HTML...");
+  renderAllHTML();
+});
