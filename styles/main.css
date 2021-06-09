@@ -39,4 +39,5 @@ ul {
   background-color: rgb(227, 72, 72);
   color: lightgoldenrodyellow;
   font-size: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
 }
